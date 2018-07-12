@@ -2,18 +2,18 @@
 
 Habitus is a build workflow tool for Docker images. Using Habitus, users can:
 
-- Build multi-stepped Docker images across a shared cluster of build servers.
+- Build multi-stepped Docker images across a shared cluster of build servers
 - Use and move build artifacts between different steps
 - Provide secrets during build (for example private SSH keys to pull build dependencies in private repositories) without leaving trace
-- Squashing layers in Docker images after build
-- Enforce build step dependencies
-- Building images on a multi-tenanted environment like a SaaS CI provider
+- Automate squashing layers in Docker images after build
+- Enforce build-step dependencies
+- Build images on a multi-tenanted environment like a SaaS CI provider
 
 Through these features Habitus makes the following possible:
 
 - Construction of complex multi-stepped builds
-- Reduction of attach surface and image size by moving the build artifacts from a build-time image to a runtime image
-- Keeping their private repositories secure by preventing secrets being left inside of images by mistake
+- Minimization of attach surface and image size (and consequentially, image vulnerability) by moving the build artifacts from a build-time image to a runtime image
+- Securing IP in non-private repositories by preventing secrets being left inside of images by mistake
 
 **Sponsor from TOC:** ---
 
